@@ -25,7 +25,7 @@ public class JpgToAvi {
 	 */
 
 	public static void main(String[] args) throws Exception {
-		//服务器修改行
+		//服务器修改行v0.2
 		// jpgs目录放置jpg图片,图片文件名为(1.jpg,2.jpg...)
 		final File[] jpgs = new File("C:\\Users\\dell\\Desktop\\pic\\").listFiles();
 
