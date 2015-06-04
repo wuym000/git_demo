@@ -25,11 +25,11 @@ public class JpgToAvi {
 	 */
 
 	public static void main(String[] args) throws Exception {
-
-		// jpgsÄ¿Â¼·ÅÖÃjpgÍ¼Æ¬,Í¼Æ¬ÎÄ¼şÃûÎª(1.jpg,2.jpg...)
+		//æœåŠ¡å™¨ä¿®æ”¹è¡Œ
+		// jpgsç›®å½•æ”¾ç½®jpgå›¾ç‰‡,å›¾ç‰‡æ–‡ä»¶åä¸º(1.jpg,2.jpg...)
 		final File[] jpgs = new File("C:\\Users\\dell\\Desktop\\pic\\").listFiles();
 
-		// ¶ÔÎÄ¼şÃû½øĞĞÅÅĞò(±¾Ê¾Àı¼Ù¶¨ÎÄ¼şÃûÖĞµÄÊı×ÖÔ½Ğ¡,Éú³ÉÊÓÆµµÄÖ¡ÊıÔ½¿¿Ç°)
+		// å¯¹æ–‡ä»¶åè¿›è¡Œæ’åº(æœ¬ç¤ºä¾‹å‡å®šæ–‡ä»¶åä¸­çš„æ•°å­—è¶Šå°,ç”Ÿæˆè§†é¢‘çš„å¸§æ•°è¶Šé å‰)
 		/*Arrays.sort(jpgs, new Comparator<File>() {
 			public int compare(File file1, File file2) {
 				String numberName1 = file1.getName().replace(".JPEG", "");
@@ -42,10 +42,10 @@ public class JpgToAvi {
 		if(!file.exists()){
 			file.mkdirs();
 		}*/
-		DefaultMovieInfoProvider dmip = new DefaultMovieInfoProvider("test00900.avi");//Éú³ÉÊÓÆµµÄÃû³Æ
-		dmip.setFPS(5); // ÉèÖÃÃ¿ÃëÖ¡Êı
-		dmip.setNumberOfFrames(jpgs.length); // ×ÜÖ¡Êı
-		//ÊÓÆµ¿íºÍ¸ß£¬×îºÃÓëÍ¼Æ¬¿í¸ß±£³ÖÒ»Ö±
+		DefaultMovieInfoProvider dmip = new DefaultMovieInfoProvider("test00900.avi");//ç”Ÿæˆè§†é¢‘çš„åç§°
+		dmip.setFPS(5); // è®¾ç½®æ¯ç§’å¸§æ•°
+		dmip.setNumberOfFrames(jpgs.length); // æ€»å¸§æ•°
+		//è§†é¢‘å®½å’Œé«˜ï¼Œæœ€å¥½ä¸å›¾ç‰‡å®½é«˜ä¿æŒä¸€ç›´
 		/*dmip.setMWidth(1440);
 		dmip.setMHeight(860);*/
 		dmip.setMWidth(1280);
@@ -54,7 +54,7 @@ public class JpgToAvi {
 		new Jim2Mov(new ImageProvider() {
 			public byte[] getImage(int frame) {
 				try {
-					// ÉèÖÃÑ¹Ëõ±È
+					// è®¾ç½®å‹ç¼©æ¯”
 					return MovieUtils.convertImageToJPEG((jpgs[frame]), 1.0f);
 				} catch (IOException e) {
 					e.printStackTrace();
