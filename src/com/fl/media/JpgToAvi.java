@@ -28,7 +28,8 @@ public class JpgToAvi {
 		//服务器修改行v0.2
 		// jpgs目录放置jpg图片,图片文件名为(1.jpg,2.jpg...)
 		final File[] jpgs = new File("C:\\Users\\dell\\Desktop\\pic\\").listFiles();
-
+		String a = "test";
+		System.out.println(a);
 		// 对文件名进行排序(本示例假定文件名中的数字越小,生成视频的帧数越靠前)
 		/*Arrays.sort(jpgs, new Comparator<File>() {
 			public int compare(File file1, File file2) {
