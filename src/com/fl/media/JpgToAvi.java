@@ -30,6 +30,9 @@ public class JpgToAvi {
 		final File[] jpgs = new File("E:\\Users\\dell\\Desktop\\pic\\").listFiles();
 		String a = "test";
 		System.out.println(a);
+		System.out.println("2");
+		System.out.println("2");
+		System.out.println("2");
 		// 对文件名进行排序(本示例假定文件名中的数字越小,生成视频的帧数越靠前)
 		/*Arrays.sort(jpgs, new Comparator<File>() {
 			public int compare(File file1, File file2) {
