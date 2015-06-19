@@ -5,7 +5,7 @@ package com.fl.media;
  */
 public class C {
     public void s(){
-        String a = "final";
-        String c = "home";
+        String a = "back";
+        String c = "up";
     }
 }
