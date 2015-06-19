@@ -7,5 +7,5 @@ public class D {
     String a = "3";
     String d = "d";
     String e = "e";
-    
+    String f = "f";
 }
