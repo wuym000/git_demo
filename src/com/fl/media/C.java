@@ -6,6 +6,6 @@ package com.fl.media;
 public class C {
     public void s(){
         String a = "2";
-        String c = "abcd";    
+        String c = "wwww";    
     }
 }
