@@ -5,7 +5,7 @@ package com.fl.media;
  */
 public class C {
     public void s(){
-        String a = "final";
-        String c = "merge";    
+        String a = "2";
+        String c = "ttttt";    
     }
 }
