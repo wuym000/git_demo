@@ -34,6 +34,8 @@ public class JpgToAvi {
 		System.out.println("2");
 		System.out.println("2");
 		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
 		// 对文件名进行排序(本示例假定文件名中的数字越小,生成视频的帧数越靠前)
 		/*Arrays.sort(jpgs, new Comparator<File>() {
 			public int compare(File file1, File file2) {
